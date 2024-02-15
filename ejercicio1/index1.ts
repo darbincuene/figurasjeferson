@@ -1,4 +1,4 @@
- export class Rectangulo {
+  class Rectangulo {
 
     base: number
     altura: number
@@ -36,9 +36,18 @@
      
 calcularPerimetro(): number {
         
-       
-     
-return 2 * (this.base + this.altura);
-    }
+    return 2 * (this.base + this.altura);
+}
 
 }
+
+
+
+
+const miRectangulo = new Rectangulo(5, 10);
+
+
+console.log("Área del rectángulo:", miRectangulo.calcularArea());
+
+
+console.log("Perímetro del rectángulo:", miRectangulo.calcularPerimetro());
